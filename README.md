@@ -129,8 +129,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Shaan Mohammad Rizwan
 - Email: shaanmr07@gmail.com
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- GitHub: [Your GitHub Profile](https://github.com/your-profile)
+- LinkedIn: [Shaan Mohammad R.](https://linkedin.com/in/shaanmr)
 
 ---
 
