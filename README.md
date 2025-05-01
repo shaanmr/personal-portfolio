@@ -133,4 +133,4 @@ Shaan Mohammad Rizwan
 
 ---
 
-Made with ❤️ by Shaan Mohammad Rizwan 
+Made with by Shaan Mohammad Rizwan 
