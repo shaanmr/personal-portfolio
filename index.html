@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAAN MOHAMMAD RIZWAN - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Dev Icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background Fallback -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="myVideo">
+            <source src="./assets/videos/coding-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand profile-picture" href="#home">
+                <img src="./assets/images/profile.jpg" alt="Profile Picture" class="nav-profile-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="hero-content">
+                        <div class="hero-intro mb-4">
+                            <span class="greeting">Hello, I'm</span>
+                            <h1 class="name">SHAAN MOHAMMAD RIZWAN</h1>
+                            <p class="lead profession">Web Developer | Learning Cybersecurity</p>
+                            <p id="subtitle-text" class="subtitle"></p>
+                        </div>
+                        <div class="hero-description mb-4">
+                            <p class="description">I craft modern web experiences with a focus on both functionality and security. Passionate about creating secure, user-friendly applications that make a difference.</p>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-glass btn-primary">
+                                <i class="fas fa-envelope me-2"></i>Contact Me
+                            </a>
+                            <a href="./assets/files/Shaan_CV.pdf" target="_blank" class="btn btn-glass btn-outline" id="cv-download">
+                                <i class="fas fa-download me-2"></i>Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="hero-image-container">
+                        <img src="./assets/images/profile.jpg" alt="Profile Image" class="profile-image">
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">05+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./assets/images/profile2.jpg" alt="Profile Photo" class="img-fluid rounded mb-4">
+                    <div class="info-card">
+                        <h3 class="info-card-title">Personal Information</h3>
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-label">Name:</span>
+                                Shaan Mohammad Rizwan
+                            </li>
+                            <li>
+                                <span class="info-label">Education:</span>
+                                B.Sc in Computer Science & Engineering
+                            </li>
+                            <li>
+                                <span class="info-label">Age:</span>
+                                25 Years (Born in 2000)
+                            </li>
+                            <li>
+                                <span class="info-label">Languages:</span>
+                                English, Bengali
+                            </li>
+                            <li>
+                                <span class="info-label">Career Goals:</span>
+                                Aspiring to become a Full Stack Developer and contribute to innovative tech solutions
+                            </li>
+                            <li>
+                                <span class="info-label">Hobbies:</span>
+                                Coding, Reading Tech Blogs, Gaming, Photography
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="skills-container">
+                        <h3 class="section-title mb-4">Skills</h3>
+                        <div class="row g-3">
+                            <!-- Frontend -->
+                            <div class="col-6 col-md-3">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-card">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-card">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-card">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://react.dev/learn" target="_blank" class="skill-card">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://nextjs.org/docs" target="_blank" class="skill-card">
+                                    <i class="fab fa-react"></i>
+                                    <span>Next.js</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://getbootstrap.com/docs/" target="_blank" class="skill-card">
+                                    <i class="fab fa-bootstrap"></i>
+                                    <span>Bootstrap</span>
+                                </a>
+                            </div>
+                            <!-- Backend -->
+                            <div class="col-6 col-md-3">
+                                <a href="https://docs.python.org/3/" target="_blank" class="skill-card">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://docs.djangoproject.com/" target="_blank" class="skill-card">
+                                    <i class="devicon-django-plain"></i>
+                                    <span>Django</span>
+                                </a>
+                            </div>
+                            <!-- Tools -->
+                            <div class="col-6 col-md-3">
+                                <a href="https://git-scm.com/doc" target="_blank" class="skill-card">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://docs.github.com/" target="_blank" class="skill-card">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a href="https://code.visualstudio.com/docs" target="_blank" class="skill-card">
+                                    <i class="devicon-vscode-plain"></i>
+                                    <span>VS Code</span>
+                                </a>
+                            </div>
+                            <!-- Database -->
+                            <div class="col-6 col-md-3">
+                                <a href="https://dev.mysql.com/doc/" target="_blank" class="skill-card">
+                                    <i class="fas fa-database"></i>
+                                    <span>MySQL</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Philosophy Section -->
+                    <div class="mt-5">
+                        <h2 class="text-center mb-4">Learning Philosophy</h2>
+                        <div class="philosophy-container">
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="philosophy-card">
+                                        <div class="philosophy-icon">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <h3>Growth</h3>
+                                        <p>Every challenge is an opportunity to learn and evolve.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="philosophy-card">
+                                        <div class="philosophy-icon">
+                                            <i class="fas fa-hands-helping"></i>
+                                        </div>
+                                        <h3>Collaboration</h3>
+                                        <p>Learning thrives in community and shared knowledge.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="philosophy-card">
+                                        <div class="philosophy-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <h3>Practice</h3>
+                                        <p>Real learning comes from building and solving problems.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="philosophy-card">
+                                        <div class="philosophy-icon">
+                                            <i class="fas fa-code-branch"></i>
+                                        </div>
+                                        <h3>Adaptation</h3>
+                                        <p>Staying flexible in the ever-evolving tech landscape.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Resume</h2>
+            <div class="row">
+                <!-- Education Column -->
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <div class="resume-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-graduation-cap me-2"></i>Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>B.Sc in Computer Science & Engineering</h4>
+                                    <h5>University Of Information Technolgy & Sciences (UITS)</h5>
+                                    <p class="timeline-date">2020 - 2024</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Higher Secondary Certificate (HSC)</h4>
+                                    <h5>Dhaka City College</h5>
+                                    <p class="timeline-date">2017 - 2019</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Secondary School Certificate (SSC)</h4>
+                                    <h5>Khilgaon Govt. High School</h5>
+                                    <p class="timeline-date">2012 - 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience Column -->
+                <div class="col-12 col-lg-6">
+                    <div class="resume-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-briefcase me-2"></i>Experience
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4>Industrial Attachment</h4>
+                                    <h5>Ariyone IT Limited</h5>
+                                    <p class="timeline-date">October 2023 – February 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/Hotel Manegment System.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Management System</h5>
+                            <p class="card-text">A modern, responsive hotel management website built with HTML, CSS, and JavaScript. It features a luxurious hotel booking system with a focus on local culture and hospitality.</p>
+                            <div class="card-buttons">
+                                <a href="https://shaanmr.github.io/hotel-management-system/" target="_blank" class="btn btn-glass"><i class="fas fa-rocket"></i> Live Demo</a>
+                                <a href="https://github.com/shaanmr/hotel-management-system" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/Silent Echoes.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Silent Echoes</h5>
+                            <p class="card-text">A minimalist digital space where technology, literature, and life's moments find their voice through thoughtful content and clean design.</p>
+                            <div class="card-buttons">
+                                <a href="https://shaanmr.github.io/My-Silent-Echoes/" target="_blank" class="btn btn-glass"><i class="fas fa-rocket"></i> Live Demo</a>
+                                <a href="https://github.com/shaanmr/My-Silent-Echoes" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/Bootslander Replica.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootslander Replica</h5>
+                            <p class="card-text">A static HTML & CSS replica of the "Bootslander" landing page, built from scratch with a focus on clean, responsive design.</p>
+                            <div class="card-buttons">
+                                <a href="https://bootslander-replica-by-shaanmr.netlify.app/" target="_blank" class="btn btn-glass"><i class="fas fa-rocket"></i> Live Demo</a>
+                                <a href="https://github.com/shaanmr/bootslander-replica" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/not live yet.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Admission Assistance Website</h5>
+                            <p class="card-text">This project streamlines student admissions with course searches, institution comparisons, and application tracking. Its user-friendly interface and resource hub offer smooth navigation and guidance using modern web technologies.</p>
+                            <div class="card-buttons">
+                                <a href="#" target="_blank" class="btn btn-glass"><i class="fas fa-rocket"></i> Live Demo</a>
+                                <a href="https://github.com/shaanmr/admission-assistance-website" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/Simple Shopping Cart.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Shopping Cart</h5>
+                            <p class="card-text">A simple e-commerce shopping cart built using HTML, CSS, and JavaScript. Allows users to add, remove, and update product quantities in the cart, and displays the total price dynamically.</p>
+                            <div class="card-buttons">
+                                <a href="https://simple-shopping-cart-by-shaanmr.netlify.app/" target="_blank" class="btn btn-glass"><i class="fas fa-rocket"></i> Live Demo</a>
+                                <a href="https://github.com/shaanmr/simple-shopping-cart" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/not live yet.png" class="card-img-top" alt="Project 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media App</h5>
+                            <p class="card-text">A simple social media application built using Django, HTML, CSS, and JavaScript. This application allows users to register, log in, create posts, and manage their profile.</p>
+                            <div class="card-buttons">
+                                <a href=" " target="_blank" class="btn btn-glass"><i class="fas fa-rocket"></i> Live Demo</a>
+                                <a href="https://github.com/shaanmr/social-media-app" target="_blank" class="btn btn-glass"><i class="fab fa-github"></i> Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="row">
+                <!-- Let's Connect Section -->
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <div class="connect-section">
+                        <h3 class="section-title">Let's Connect</h3>
+                        <div class="connect-messages">
+                            <p>Let's create something amazing together! Feel free to reach out for collaborations or just a friendly chat.</p>
+                        </div>
+                        <div class="connect-info">
+                            <div class="connect-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="connect-details">
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:shaanmr07@gmail.com" target="_blank">shaanmr07@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="connect-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="connect-details">
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+8801628015752" target="_blank">+880 16280-15752</a></p>
+                                </div>
+                            </div>
+                            <div class="connect-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="connect-details">
+                                    <h4>Location</h4>
+                                    <p>Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-md-7">
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xdkgaybq" method="POST">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-send">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shaan Mohammad Rizwan. All rights reserved.</p>
+            <div class="social-section">
+                <span class="social-title">Find Me On:</span>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://linkedin.com/in/shaanmr" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/shaanmr" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/shaanmr" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/dyn_kin
+                        " target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@shaanmr" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Go to Top Button -->
+            <button id="goToTop" class="go-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
