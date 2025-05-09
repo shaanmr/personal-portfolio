@@ -25,6 +25,7 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript. The
 - JavaScript
 - Bootstrap 5
 - Font Awesome Icons
+- Dev Icons
 - Google Fonts
 
 ## Sections
