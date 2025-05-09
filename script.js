@@ -44,31 +44,6 @@ document.querySelectorAll('.skill').forEach(skill => {
     observer.observe(skill);
 });
 
-// Form submission handling
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.querySelector('.contact-form');
-    const submitBtn = contactForm.querySelector('.btn-primary');
-
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Add loading state
-        submitBtn.classList.add('loading');
-        
-        // Simulate form submission (replace with actual form submission)
-        setTimeout(() => {
-            // Remove loading state
-            submitBtn.classList.remove('loading');
-            
-            // Show success message (you can customize this)
-            alert('Message sent successfully!');
-            
-            // Reset form
-            contactForm.reset();
-        }, 2000); // Simulate 2 second delay
-    });
-});
-
 // Add active class to nav links on scroll
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
