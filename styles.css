@@ -18,6 +18,11 @@ body {
     padding-bottom: calc(70px + 0.5rem);
 }
 
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navigation */
 .navbar {
     padding: 1rem 0;
@@ -482,6 +487,20 @@ body {
     
     .skill-card span {
         font-size: 0.7rem;
+    }
+}
+
+/* Adjust skill cards for small screens */
+@media (max-width: 576px) {
+    .skills-container .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
     }
 }
 
@@ -1558,7 +1577,7 @@ body {
 }
 
 .connect-details p {
-    color: var(--text-secondary);
+    color: var (--text-secondary);
     margin: 0;
     font-size: 0.95rem;
 }
@@ -2265,4 +2284,15 @@ body {
 .navbar-toggler:hover .navbar-toggler-icon::before,
 .navbar-toggler:hover .navbar-toggler-icon::after {
     background-color: var(--primary-color);
+}
+
+/* Adjust navbar for small screens */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+    }
 }
